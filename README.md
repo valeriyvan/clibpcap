@@ -10,7 +10,7 @@ This package solves the problem by **building libpcap from source** as part of t
 
 ## How was it build?
 
-1. The libpcap source code is included as a Git submodule in `vendor/libpcap`.
+1. The libpcap source code is included as a Git submodule in `Sources/clibpcap/libpcap`.
 2. Build steps:
    ```bash
    ./autogen.sh
