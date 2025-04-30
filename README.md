@@ -31,6 +31,7 @@ While the `./configure` step will likely generate different outputs on Linux, th
 
 * [libpcap GitHub](https://github.com/the-tcpdump-group/libpcap)
 * [libpcap installation notes](https://github.com/the-tcpdump-group/libpcap/blob/master/INSTALL.md)
+* [Wrapping C/C++ Library in Swift](https://www.swift.org/documentation/articles/wrapping-c-cpp-library-in-swift.html)
 
 ## License
 
