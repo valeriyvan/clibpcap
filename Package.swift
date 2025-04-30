@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "MyLibpcapPackage",
+    name: "clibpcap",
     platforms: [.macOS(.v10_15)],
     products: [
         .library(name: "clibpcap", targets: ["clibpcap"]),
@@ -15,7 +15,6 @@ let package = Package(
         .target(
             name: "clibpcap",
             dependencies: [],
-            path: nil, // String
             exclude: [],
             sources: [
                 "./libpcap/gencode.c",
@@ -37,10 +36,7 @@ let package = Package(
                 "./libpcap/bpf_filter.c",
                 "./libpcap/bpf_dump.c"
             ],
-            resources: [
-            ],
             publicHeadersPath: "include",
-            packageAccess: true,
             cSettings: [
                 .headerSearchPath("./libpcap"),
                 .headerSearchPath("./extra"),
@@ -48,12 +44,7 @@ let package = Package(
                 .define("BUILDING_PCAP"),
                 .unsafeFlags(["-fvisibility=hidden", "-fno-common"])
             ],
-            cxxSettings: nil,
-            swiftSettings: nil,
-            linkerSettings: [
-                .unsafeFlags([/* "-L\(pluginWorkDirectory.path)/build/lib", */ "-lpcap"])
-            ],
-            plugins: nil
+            linkerSettings: [.unsafeFlags(["-lpcap"])]
         ),
         .executableTarget(
             name: "pcapdump",
