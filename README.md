@@ -25,7 +25,7 @@ libpcap will be compiled and statically linked with your Swift code.
 
 ## Will it work on Linux?
 
-While the `./configure` step will likely generate different outputs on Linux, the goal is to eventually automate this via a SwiftPM BuildToolPlugin, running `./autogen.sh && ./configure` && make` and moving files into `Sources/clibcap/extra` folder as part of `.prebuildCommand` and/or `.buildCommand`.
+While the `./configure` step will likely generate different outputs on Linux, the goal is to eventually automate this via a SwiftPM BuildToolPlugin, running `./autogen.sh && ./configure && make` and moving files into `Sources/clibcap/extra` folder as part of `.prebuildCommand` and/or `.buildCommand`.
 
 ## Useful links
 
