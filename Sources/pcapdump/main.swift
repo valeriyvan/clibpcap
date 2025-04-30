@@ -2,15 +2,6 @@ import clibpcap
 import Foundation
 import ArgumentParser
 
-//print(isIPv6("fe80::3f04:152a:d1bb:46d8"))
-//print(isIPv6("fe80:0000:3f04:152a:d1bb:46d8"))
-//print(isIPv6("ff02::16"))
-//print(isIPv6("0000::0000:0000:0000:0000"))
-//print(isIPv6("192.168.0.0"))
-//print(isIPv6("0.0.0.0"))
-//print(isIPv6("ff.ff.ff.ff"))
-//print(isIPv6("127.0.0.1"))
-
 struct PcapDump: ParsableCommand {
     static var configuration: CommandConfiguration {
         CommandConfiguration(commandName: "pcapdump")
