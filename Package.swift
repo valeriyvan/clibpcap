@@ -39,7 +39,6 @@ let package = Package(
             publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("libpcap"),
-                .headerSearchPath("include"),
                 .headerSearchPath("extra"),
                 .define("HAVE_CONFIG_H"),
                 .define("BUILDING_PCAP"),
