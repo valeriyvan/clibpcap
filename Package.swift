@@ -38,8 +38,8 @@ let package = Package(
             ],
             publicHeadersPath: "include",
             cSettings: [
-                .headerSearchPath("./libpcap"),
-                .headerSearchPath("./extra"),
+                .headerSearchPath("libpcap"),
+                .headerSearchPath("extra"),
                 .define("HAVE_CONFIG_H"),
                 .define("BUILDING_PCAP"),
                 .unsafeFlags(["-fvisibility=hidden", "-fno-common"])
